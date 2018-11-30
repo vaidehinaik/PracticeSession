@@ -59,6 +59,23 @@ class LinkedList:
                 print("---> {}".format(curr.data))
                 curr = curr.next
 
+    # def addNode(self,data):
+    #     n = Node(data=data)
+    #     if (self.start == None):
+    #         start = n
+    #     else:
+    #         n.next = self.start
+    #         self.start = n
+    #
+    # def deletNode(self):
+    #     if self.start != None:
+    #         temp = self.start
+    #         self.start = self.start.next
+    #         temp = None
+
+
+
+
     # def isCyclic(self):
 
 
@@ -75,7 +92,5 @@ if __name__ == "__main__":
     ll.removeFromBeginning()
     ll.removeFromBeginning()
     ll.display()
-
-
 
 

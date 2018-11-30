@@ -17,10 +17,24 @@ class ValidParanthesis:
 
 if __name__ == "__main__":
     vp = ValidParanthesis()
-    # print(vp.isValid("{[()]}"))
-    # print(vp.isValid(")}[)]("))
-    print(vp.isValid("{erty"))
-    #
+    print(vp.isValid("{[()]}"))
+    print(vp.isValid(")}[)]("))
 
 
+
+def validParanthesis(s):
+    stack= []
+    d = {"{":"}","[":"]","(":")"}
+    for bracket in s:
+        if bracket in d.keys():
+            stack.append(bracket)
+        elif bracket in d.values():
+            if not stack or bracket != d[stack.pop()]:
+                return False
+        else:
+            raise Exception("unsupported character: {}".format(bracket))
+    if stack:
+        return False
+    return True
+print(validParanthesis("{[]}"))
 
