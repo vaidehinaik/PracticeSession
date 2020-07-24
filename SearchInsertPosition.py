@@ -10,7 +10,10 @@ def searchInsertPosition(arr,target):
         else:
             if target > arr[i] and target < arr[i+1]:
                 return i+1
-print(searchInsertPosition([1,3,5,6,7],8))
+print(searchInsertPosition([1,3,5,6,7],2))
+
+
+
 
 
 

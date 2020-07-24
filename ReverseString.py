@@ -29,3 +29,19 @@ print(reverseString("Vaidehi"))
 #             length -= 1
 #         return ''.join(result)
 # print(reverse_string_iteratively("sushant"))
+
+
+
+def reverseString(s):
+    left = 0
+    right = len(s)-1
+    str_list = list(s)
+    for i in range(len(s)//2 + len(s)%2):
+        str_list[left],str_list[right] = str_list[right],str_list[left]
+
+        left += 1
+        right -= 1
+    return "".join(str_list)
+print(reverseString("sharvil"))
+
+

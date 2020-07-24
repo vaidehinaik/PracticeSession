@@ -1,11 +1,10 @@
-def toLowerCase(s):
-    ret = ""
+ def lowerCase(s):
+    str = ""
     for i in s:
         o = ord(i)
         if o >= 65 and o <= 90:
-            ret += chr(o+32)
+            str += chr(o+32)
         else:
-            ret += i
-    return ret
-print(toLowerCase("SUSHANT"))
-
+            str += i
+    return str
+print(lowerCase("VAIDEHI"))

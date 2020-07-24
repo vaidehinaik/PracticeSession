@@ -1,0 +1,2 @@
+def squaringSortedArray(arr):
+

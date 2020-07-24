@@ -10,3 +10,5 @@ def majorityElement(arr):
             return maj_ele
 print(majorityElement([2,2,1,1,1,2,10,10,10,10,10,10,10,10]))
 
+
+

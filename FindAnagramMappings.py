@@ -22,3 +22,6 @@ def anagramMapping(arr1,arr2):
     return arr
 print(anagramMapping([12, 28,46, 32, 50],[50, 12,32, 46, 28]))
 
+
+
+

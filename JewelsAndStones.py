@@ -13,3 +13,14 @@ def jewelsAndStones(j, s):
     return count
 
 print(jewelsAndStones("aAab","aaAbbb"))
+
+
+
+def jewelsAndStone(j,s):
+    count = 0
+    for i in s:
+        if i in j:
+            count += 1
+    return count
+print(jewelsAndStones("aAab","aaAbbb"))
+

@@ -26,3 +26,5 @@ print(firstUniqueCharacter("loveleetcode"))
 # for s in str:
 #   if l[ord(s)] == 1:
 #     print("First Non repeat letter: {}".format(s))
+
+

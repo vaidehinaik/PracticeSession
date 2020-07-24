@@ -8,7 +8,9 @@ def reverseInteger(num):
         rem = num % 10
         s += str(rem)
         num = num//10
+        print(num)
     s = s.lstrip("0")
     return int(s) * multiplier
-print(reverseInteger(-123))
+print(reverseInteger(123))
+
 

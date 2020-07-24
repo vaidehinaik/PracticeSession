@@ -12,20 +12,19 @@ def twoSum(numbers,target):
              left += 1
          else:
              right -= 1
-     return numbers
+     return -1
 print(twoSum([2,7,11,15],9))
 
 
 # solution 2 using dict
 
-# def twoSum(nums,target):
-#     d = dict()
-#     for i,num in enumerate(nums):
-#         # print(num)
-#         if target-num in d:
-#             return [d[target-num],i]
-#         d[num] = i
-#     return nums
-# print(twoSum([11,15,7,2],9))
-
+def twoSum(nums,target):
+    d = dict()
+    for i,num in enumerate(nums):
+        # print(num)
+        if target-num in d:
+            return [d[target-num],i]
+        d[num] = i
+    return None
+print(twoSum([2,7,13,16],9))
 

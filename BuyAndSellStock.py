@@ -1,17 +1,17 @@
-# solution 1
+import sys
 
-def buyAndSellStock(prices):
-    buying_price  = min(prices)
-    # print(buying_price)
-    selling_price = max(prices[buying_price:])
-    # print(selling_price)
-    profit = selling_price - buying_price
-    return profit
-print("The maximum profit is: {}".format(buyAndSellStock([7,6,4,3,1])))
+def bestTimetoBuySellStock(prices):
+    result,min_price = 0, sys.maxsize
+    for price in prices:
+        if price < min_price:
+            min_price = price
+
+        else:
+            # result = max(result,price-min_price)
+            if result < (price - min_price):
+                result = price - min_price
+    return result
+print(bestTimetoBuySellStock([7,6,4,3,1]))
 
 
-
-# soultion 2
-
-# def buyAndSellStock(prices):
 

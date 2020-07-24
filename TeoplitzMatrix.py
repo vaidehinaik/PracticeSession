@@ -12,11 +12,5 @@ if __name__ == "__main__":
     print(tm.isTeoplitz(m))
 
 
-# def isTeoplitz(matrix):
-#     for i in range(len(matrix)-1):
-#         for j in range(len(matrix[i])-1):
-#             if matrix[i][j] != matrix[i+1][j+1]:
-#                 return False
-#     return True
-# print(isTeoplitz([[1,2,3,4],[1,5,2,3],[9,5,1,2]]))
-#
+
+

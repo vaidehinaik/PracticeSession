@@ -14,3 +14,5 @@ def shortestWordDistance(words,word1,word2):
 print("The shortest distance between two words is: {}".format(shortestWordDistance(["practice", "makes", "perfect", "coding", "makes"],"makes","coding")))
 
 
+
+

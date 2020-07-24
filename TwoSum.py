@@ -8,3 +8,4 @@ def twoSum(nums,target):
 print(twoSum([15,11,7,2],9))
 
 
+

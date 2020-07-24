@@ -1,6 +1,7 @@
 def longestCommonPrefix(words):
     res = ""
     min_word = min(words, key = len)
+    # print(min_word)
     for index,letter in enumerate(min_word):
         for word in words:
             if word[index] != letter:
@@ -8,5 +9,6 @@ def longestCommonPrefix(words):
         res += letter
     return res
 print(longestCommonPrefix(["flower","flow","flight"]))
+
 
 

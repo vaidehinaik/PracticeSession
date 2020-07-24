@@ -33,3 +33,4 @@ def fizzBuzz(n):
             res.append(str(i))
     return res
 print(fizzBuzz(100))
+
